@@ -915,7 +915,7 @@ const xhr = new XMLHttpRequest();
 let json = JSON.stringify({
    MobileNumber: phone,
  });
-xhr.open('POST', 'http://44.200.207.225:8855/api/external/HasMobileApp');
+xhr.open('POST', 'https://dev-pharmacyapi.healthvault.mydoctor.lk/api/DrugPrescription/HasMobileApp');
 xhr.setRequestHeader("Content-type", "application/json");
 xhr.send(json);
 
@@ -1144,7 +1144,7 @@ function recordResults(){
     });
 
    document.getElementById("loaderx").style.display = "block";
-   xhr.open('POST', 'http://44.200.207.225:8855/api/external/SaveMedicareScore');
+   xhr.open('POST', 'https://dev-pharmacyapi.healthvault.mydoctor.lk/api/DrugPrescription/SaveMedicareScore');
    xhr.setRequestHeader("Content-type", "application/json");
    xhr.send(json);
    
